@@ -1,3 +1,5 @@
+
+
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
@@ -59,12 +61,15 @@ var promptCustomer = function (res) {
                     if ((res[id].stockquantity - answer.quantity) > 0) {
                         var quantity = (res[id].stockquantity - answer.quantity);
                         connection.query("UPDATE products SET ? WHERE ?", [{
-                            stockquantity: quantity
-                        }, {
-                            productname: product
-                        }], function (err, res2) {
+                                stockquantity: quantity
+                            },
+                            {
+                                productname: product
+                            }
+                        ], function (err, res2) {
                             if (err) throw err;
-                            console.log('Product Purchased!');
+                            var totalPrice = res[id].price * answer.quantity;
+                            console.log('Product Purchased for $' + totalPrice + '.');
                         })
                         makeTable();
                     } else {
@@ -78,5 +83,7 @@ var promptCustomer = function (res) {
             console.log('This is not a valid selection.');
             promptCustomer(res);
         }
+
     });
+
 }
