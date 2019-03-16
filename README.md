@@ -1,4 +1,4 @@
-# H1 Bamazon
+#  Bamazon
 
 This is a MySQL Database that uses Node.JS terminal to display prompts to view and purchase products.
 
@@ -23,13 +23,13 @@ Once a product is purchased, the amount in stock deducts the number of items pur
 
 If the user selects a product that is not in the database or selects an amount that is more than in stock, they receive a message, “"This is not a valid selection."
 
-Demonstration video: Bamazon Demonstration.webm
+Demonstration video: <C:\Users\Tech Eye\Documents\Bamazon\Bamazon Demonstration.webm>
 
-# H1 Requirements
+# Requirements
 • MySQL
 • Inquirer
 
-Languages and Runtimes
+#  Languages and Runtimes
 • Javascript
 • Node JS
 • MySQL
