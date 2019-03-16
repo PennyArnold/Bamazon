@@ -1,4 +1,4 @@
-Bamazon
+# H1 Bamazon
 
 This is a MySQL Database that uses Node.JS terminal to display prompts to view and purchase products.
 
@@ -25,7 +25,7 @@ If the user selects a product that is not in the database or selects an amount t
 
 Demonstration video: Bamazon Demonstration.webm
 
-Requirements
+# H1 Requirements
 • MySQL
 • Inquirer
 
